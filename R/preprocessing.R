@@ -1,7 +1,7 @@
 library(data.table)
+setwd('/home/goran/git/movieLens/movieLens/R')
 
-data.movies = as.data.table(read.table('data/itemsData.txt', sep = '\t',
-                                       header = T, row.names = 1))
+data.movies = as.data.table(read.table('data/itemsData.txt', sep = '\t', header = T))
 
 # reading all genres
 data.genres = as.data.table(read.table('data/u.genre', sep = '|'))
@@ -59,5 +59,13 @@ ICR = upperBound - lowerBound # Inter Quartile Range
 lowerBound = lowerBound - 1.5 * ICR # a user not to considered an outlier needs to have age
 upperBound = upperBound + 1.5 * ICR # between the lowerBound and upperBound
 withoutOutliers = subset(data.users, age > lowerBound && age < upperBound)
+
+# norm.users stores the users with normalized age between [0, 1]
+norm.users = data.users
+norm.users$age = scale(data.users$age)
+
+# normalizing users age
+norm.users$age = (norm.users$age - min(norm.users$age)) / (max(norm.users$age) - min(norm.users$age))
+
 
 
