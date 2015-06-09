@@ -5,7 +5,7 @@ data.movies = as.data.table(read.table('data/itemsData.txt', sep = '\t', header 
 
 # reading all genres
 data.genres = as.data.table(read.table('data/u.genre', sep = '|'))
-setnames(data.genres, c('nameMovie', 'idMovie'))
+setnames(data.genres, c('nameGenre', 'idGenre'))
 
 data.movies = as.data.table(read.table('data/u.item', sep = '|', quote = ""))
 # removing the columns in which all values are NA (in my case 4th column)
@@ -13,7 +13,7 @@ data.movies = data.movies[, colSums(is.na(data.movies))<nrow(data.movies), with 
 
 # setting names of the columns in data.movies
 setnames(data.movies, c('idMovie', 'nameMovie', 'dateRelease', 'imdbUrl', 
-                        as.character(data.genres$nameMovie)))
+                        as.character(data.genres$nameGenre)))
 
 data.users = as.data.table(read.table('data/u.user', sep = '|'))
 # removing 5th row, because I had no idea how to use ZIP code for the future algorithms
@@ -66,6 +66,8 @@ norm.users$age = scale(data.users$age)
 
 # normalizing users age
 norm.users$age = (norm.users$age - min(norm.users$age)) / (max(norm.users$age) - min(norm.users$age))
+norm.userRating = data.userRating
+norm.userRating$age = (data.userRating$age - min(data.userRating$age)) / (max(data.userRating$age) - min(data.userRating$age))
 
-
-
+norm.userMovieRating = data.userMovieRating
+norm.userMovieRating$age = (data.userRating$age - min(data.userRating$age)) / (max(data.userRating$age) - min(data.userRating$age))
