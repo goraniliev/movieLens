@@ -1,0 +1,26 @@
+__author__ = 'goran'
+
+
+def writeData(path='../R/data/u.item'):
+    out = file('../R/data/itemsData.txt', 'w')
+    out.write('Movie')
+    genres = 'unknown | Action | Adventure | Animation | Children | Comedy | Crime | Documentary | Drama | Fantasy | Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi | Thriller | War | Western'
+    for g in genres.split(' | '):
+        out.write('\t' + g)
+    out.write('\n')
+
+    lines = [line for line in open(path)]
+
+    for line in lines:
+        line = line.strip()
+        if len(line) == 0:
+            continue
+        spl = line.split('|')
+        out.write(spl[1])
+        for i in xrange(len(spl) - 19, len(spl)):
+            out.write('\t' + spl[i])
+        out.write('\n')
+
+writeData()
+
+
