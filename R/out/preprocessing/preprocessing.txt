@@ -1,0 +1,63 @@
+	Basic summaries for all read data tables before normalization
+
+
+Users data summary:
+
+     idUser           age        gender          occupation 
+ Min.   :  1.0   Min.   : 7.00   F:273   student      :196  
+ 1st Qu.:236.5   1st Qu.:25.00   M:670   other        :105  
+ Median :472.0   Median :31.00           educator     : 95  
+ Mean   :472.0   Mean   :34.05           administrator: 79  
+ 3rd Qu.:707.5   3rd Qu.:43.00           engineer     : 67  
+ Max.   :943.0   Max.   :73.00           programmer   : 66  
+                                         (Other)      :335  
+
+
+Movies data summary:
+
+    idMovie                                nameMovie         dateRelease                                                                         imdbUrl    
+ Min.   :   1.0   Body Snatchers (1993)         :   2   01-Jan-1995:215                                                                              :   3  
+ 1st Qu.: 421.2   Butcher Boy, The (1998)       :   2   01-Jan-1994:213   http://us.imdb.com/M/title-exact?Body%20Snatchers%20(1993)                 :   2  
+ Median : 841.5   Chairman of the Board (1998)  :   2   01-Jan-1993:126   http://us.imdb.com/M/title-exact?Chasing+Amy+(1997)                        :   2  
+ Mean   : 841.5   Chasing Amy (1997)            :   2   01-Jan-1997: 98   http://us.imdb.com/M/title-exact?Designated%20Mourner%2C%20The%20%281997%29:   2  
+ 3rd Qu.:1261.8   Deceiver (1997)               :   2   01-Jan-1992: 37   http://us.imdb.com/M/title-exact?Fly%20Away%20Home%20(1996)                :   2  
+ Max.   :1682.0   Designated Mourner, The (1997):   2   01-Jan-1996: 26   http://us.imdb.com/M/title-exact?Hugo+Pool+(1997)                          :   2  
+                  (Other)                       :1670   (Other)    :967   (Other)                                                                    :1669  
+    unknown             Action         Adventure         Animation          Children           Comedy           Crime         Documentary          Drama      
+ Min.   :0.000000   Min.   :0.0000   Min.   :0.00000   Min.   :0.00000   Min.   :0.00000   Min.   :0.0000   Min.   :0.0000   Min.   :0.00000   Min.   :0.000  
+ 1st Qu.:0.000000   1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.000  
+ Median :0.000000   Median :0.0000   Median :0.00000   Median :0.00000   Median :0.00000   Median :0.0000   Median :0.0000   Median :0.00000   Median :0.000  
+ Mean   :0.001189   Mean   :0.1492   Mean   :0.08026   Mean   :0.02497   Mean   :0.07253   Mean   :0.3002   Mean   :0.0648   Mean   :0.02973   Mean   :0.431  
+ 3rd Qu.:0.000000   3rd Qu.:0.0000   3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:0.00000   3rd Qu.:1.000  
+ Max.   :1.000000   Max.   :1.0000   Max.   :1.00000   Max.   :1.00000   Max.   :1.00000   Max.   :1.0000   Max.   :1.0000   Max.   :1.00000   Max.   :1.000  
+                                                                                                                                                              
+    Fantasy           FilmNoir           Horror          Musical           Mystery           Romance           SciFi            Thriller           War         
+ Min.   :0.00000   Min.   :0.00000   Min.   :0.0000   Min.   :0.00000   Min.   :0.00000   Min.   :0.0000   Min.   :0.00000   Min.   :0.0000   Min.   :0.00000  
+ 1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.:0.00000  
+ Median :0.00000   Median :0.00000   Median :0.0000   Median :0.00000   Median :0.00000   Median :0.0000   Median :0.00000   Median :0.0000   Median :0.00000  
+ Mean   :0.01308   Mean   :0.01427   Mean   :0.0547   Mean   :0.03329   Mean   :0.03627   Mean   :0.1468   Mean   :0.06005   Mean   :0.1492   Mean   :0.04221  
+ 3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.0000   3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.0000   3rd Qu.:0.00000   3rd Qu.:0.0000   3rd Qu.:0.00000  
+ Max.   :1.00000   Max.   :1.00000   Max.   :1.0000   Max.   :1.00000   Max.   :1.00000   Max.   :1.0000   Max.   :1.00000   Max.   :1.0000   Max.   :1.00000  
+                                                                                                                                                               
+    Western       
+ Min.   :0.00000  
+ 1st Qu.:0.00000  
+ Median :0.00000  
+ Mean   :0.01605  
+ 3rd Qu.:0.00000  
+ Max.   :1.00000  
+                  
+
+
+Ratings summary:
+
+     idUser         idMovie           rating    
+ Min.   :  1.0   Min.   :   1.0   Min.   :1.00  
+ 1st Qu.:254.0   1st Qu.: 175.0   1st Qu.:3.00  
+ Median :447.0   Median : 322.0   Median :4.00  
+ Mean   :462.5   Mean   : 425.5   Mean   :3.53  
+ 3rd Qu.:682.0   3rd Qu.: 631.0   3rd Qu.:4.00  
+ Max.   :943.0   Max.   :1682.0   Max.   :5.00  
+
+
+#############################################################################################

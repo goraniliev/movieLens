@@ -1,0 +1,18 @@
+
+
+	Basic summaries for all read norm tables after normalization
+
+
+Normalized users norm summary:
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.2576  0.3485  0.3935  0.5000  1.0000 
+
+
+Normalized ratings summary:
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.5000  0.7500  0.6325  0.7500  1.0000 
+
+
+#############################################################################################
