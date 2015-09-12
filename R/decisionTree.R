@@ -23,10 +23,6 @@ formula = as.factor(rating) ~ age + gender + occupation + Action + Adventure + A
 # build the decision tree
 moviesCtree = ctree(formula, data = trainData)
 
-table(predict(moviesCtree), trainData$rating)
-
-sink(file = "out/decisionTree/summaries")
-
 # the real results taken from the test data labels
 trueResults = as.factor(testData$rating)
 
