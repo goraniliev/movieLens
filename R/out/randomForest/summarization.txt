@@ -1,0 +1,34 @@
+Random Forest summarization details:
+
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction    1    2    3    4    5
+         1  132   27   22   14   22
+         2    0    0    0    1    0
+         3  260  576 1097  762  319
+         4  803 1674 4186 5848 3641
+         5   18   38  113  218  335
+
+Overall Statistics
+                                         
+               Accuracy : 0.3686         
+                 95% CI : (0.362, 0.3754)
+    No Information Rate : 0.3403         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.0686         
+ Mcnemar's Test P-Value : < 2.2e-16      
+
+Statistics by Class:
+
+                     Class: 1  Class: 2 Class: 3 Class: 4 Class: 5
+Sensitivity          0.108821 0.000e+00  0.20247   0.8546  0.07760
+Specificity          0.995501 9.999e-01  0.86949   0.2231  0.97549
+Pos Pred Value       0.608295 0.000e+00  0.36397   0.3621  0.46399
+Neg Pred Value       0.945648 8.849e-01  0.74719   0.7484  0.79457
+Prevalence           0.060330 1.151e-01  0.26947   0.3403  0.21471
+Detection Rate       0.006565 0.000e+00  0.05456   0.2909  0.01666
+Detection Prevalence 0.010793 4.974e-05  0.14991   0.8033  0.03591
+Balanced Accuracy    0.552161 5.000e-01  0.53598   0.5388  0.52654
