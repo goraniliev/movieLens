@@ -1,13 +1,4 @@
 Contingency table shows how many movies with rating C (the column name) have been classified as R (row name) rating
-         trueResults
-predicted    1    2    3    4    5
-        1  155   37   26   18   27
-        2   27   29   40   43   23
-        3  242  498  948  680  282
-        4  754 1695 4183 5612 3349
-        5   41   70  184  405  480
-
-
 
 Summarization shows how accurate the decision tree is (measured on the test set) and other details:
 Confusion Matrix and Statistics
