@@ -1,0 +1,43 @@
+Contingency table shows how many movies with rating C (the column name) have been classified as R (row name) rating
+         trueResults
+predicted    1    2    3    4    5
+        1  155   37   26   18   27
+        2   27   29   40   43   23
+        3  242  498  948  680  282
+        4  754 1695 4183 5612 3349
+        5   41   70  184  405  480
+
+
+
+Summarization shows how accurate the decision tree is (measured on the test set) and other details:
+Confusion Matrix and Statistics
+
+          Reference
+Prediction    1    2    3    4    5
+         1  155   37   26   18   27
+         2   27   29   40   43   23
+         3  242  498  948  680  282
+         4  754 1695 4183 5612 3349
+         5   41   70  184  405  480
+
+Overall Statistics
+                                          
+               Accuracy : 0.364           
+                 95% CI : (0.3573, 0.3707)
+    No Information Rate : 0.3405          
+    P-Value [Acc > NIR] : 2.008e-12       
+                                          
+                  Kappa : 0.0675          
+ Mcnemar's Test P-Value : < 2.2e-16       
+
+Statistics by Class:
+
+                     Class: 1 Class: 2 Class: 3 Class: 4 Class: 5
+Sensitivity          0.127153 0.012452  0.17618   0.8304  0.11536
+Specificity          0.994203 0.992408  0.88235   0.2375  0.95538
+Pos Pred Value       0.589354 0.179012  0.35774   0.3599  0.40678
+Neg Pred Value       0.945673 0.883166  0.74224   0.7307  0.80282
+Prevalence           0.061417 0.117342  0.27111   0.3405  0.20964
+Detection Rate       0.007809 0.001461  0.04776   0.2827  0.02418
+Detection Prevalence 0.013251 0.008162  0.13351   0.7856  0.05945
+Balanced Accuracy    0.560678 0.502430  0.52926   0.5340  0.53537
