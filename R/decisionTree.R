@@ -38,9 +38,8 @@ summarization = confusionMatrix(predicted, trueResults)
 # writing summaries to out/decisionTree/summarization.txt
 sink(file = "out/decisionTree/summarization.txt", type = "output")
 cat('Contingency table shows how many movies with rating C (the column name) have been classified as R (row name) rating')
-cat('\n')
-contingencyTable
-cat('\n\n\n')
+cat('\n\n')
+
 cat('Summarization shows how accurate the decision tree is (measured on the test set) and other details:')
 cat('\n')
 summarization
