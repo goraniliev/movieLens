@@ -1,7 +1,14 @@
 __author__ = 'goran'
 
 
+
 def writeData(path='../R/data/u.item'):
+    '''
+    dropping unimportant data for the data mining techniques (id, movie url, date of release...)
+    and writing the important data to itemsData file, which will be used in the R scripts
+    :param path:
+    :return:
+    '''
     out = file('../R/data/itemsData.txt', 'w')
     out.write('Movie')
     genres = 'unknown | Action | Adventure | Animation | Children | Comedy | Crime | Documentary | Drama | Fantasy | Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi | Thriller | War | Western'
