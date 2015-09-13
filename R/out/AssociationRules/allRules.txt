@@ -1,0 +1,70 @@
+All rules (the redundant are not removed:
+
+
+   lhs            rhs            support confidence       lift
+1  {Animation} => {Musical}   0.01010702  0.4047619 12.1573129
+2  {Musical}   => {Animation} 0.01010702  0.3035714 12.1573129
+3  {Animation} => {Children}  0.01961950  0.7857143 10.8325527
+4  {Children}  => {Animation} 0.01961950  0.2704918 10.8325527
+5  {Musical}   => {Children}  0.01248514  0.3750000  5.1700820
+6  {Children}  => {Musical}   0.01248514  0.1721311  5.1700820
+7  {Musical}   => {Comedy}    0.01307967  0.3928571  1.3084866
+8  {Mystery}   => {Thriller}  0.01902497  0.5245902  3.5153811
+9  {Thriller}  => {Mystery}   0.01902497  0.1274900  3.5153811
+10 {Horror}    => {Thriller}  0.01129608  0.2065217  1.3839425
+11 {War}       => {Action}    0.01248514  0.2957746  1.9820437
+12 {War}       => {Drama}     0.02259215  0.5352113  1.2416901
+13 {Crime}     => {Thriller}  0.02080856  0.3211009  2.1517599
+14 {Thriller}  => {Crime}     0.02080856  0.1394422  2.1517599
+15 {Crime}     => {Action}    0.01367420  0.2110092  1.4140137
+16 {Crime}     => {Drama}     0.02853746  0.4403670  1.0216514
+17 {Sci.Fi}    => {Adventure} 0.02021403  0.3366337  4.1942061
+18 {Adventure} => {Sci.Fi}    0.02021403  0.2518519  4.1942061
+19 {Sci.Fi}    => {Thriller}  0.01961950  0.3267327  2.1894994
+20 {Thriller}  => {Sci.Fi}    0.01961950  0.1314741  2.1894994
+21 {Sci.Fi}    => {Action}    0.03210464  0.5346535  3.5828172
+22 {Action}    => {Sci.Fi}    0.03210464  0.2151394  3.5828172
+23 {Children}  => {Adventure} 0.02497027  0.3442623  4.2892532
+24 {Adventure} => {Children}  0.02497027  0.3111111  4.2892532
+25 {Children}  => {Comedy}    0.02437574  0.3360656  1.1193313
+26 {Children}  => {Drama}     0.01129608  0.1557377  0.3613115
+27 {Adventure} => {Thriller}  0.01248514  0.1555556  1.0424081
+28 {Adventure} => {Action}    0.04458977  0.5555556  3.7228862
+29 {Action}    => {Adventure} 0.04458977  0.2988048  3.7228862
+30 {Adventure} => {Comedy}    0.01070155  0.1333333  0.4440924
+31 {Romance}   => {Action}    0.01486326  0.1012146  0.6782586
+32 {Romance}   => {Comedy}    0.05766944  0.3927126  1.3080050
+33 {Comedy}    => {Romance}   0.05766944  0.1920792  1.3080050
+34 {Romance}   => {Drama}     0.05885850  0.4008097  0.9298785
+35 {Drama}     => {Romance}   0.05885850  0.1365517  0.9298785
+36 {Thriller}  => {Action}    0.04994055  0.3346614  2.2426311
+37 {Action}    => {Thriller}  0.04994055  0.3346614  2.2426311
+38 {Thriller}  => {Drama}     0.03626635  0.2430279  0.5638247
+39 {Action}    => {Comedy}    0.01902497  0.1274900  0.4246302
+40 {Action}    => {Drama}     0.02734839  0.1832669  0.4251793
+41 {Comedy}    => {Drama}     0.05291320  0.1762376  0.4088713
+42 {Drama}     => {Comedy}    0.05291320  0.1227586  0.4088713
+43 {Animation,                                                
+    Musical}   => {Children}  0.01010702  1.0000000 13.7868852
+44 {Animation,                                                
+    Children}  => {Musical}   0.01010702  0.5151515 15.4729437
+45 {Children,                                                 
+    Musical}   => {Animation} 0.01010702  0.8095238 32.4195011
+46 {Adventure,                                                
+    Sci.Fi}    => {Action}    0.01605232  0.7941176  5.3215374
+47 {Action,                                                   
+    Sci.Fi}    => {Adventure} 0.01605232  0.5000000  6.2296296
+48 {Action,                                                   
+    Adventure} => {Sci.Fi}    0.01605232  0.3600000  5.9952475
+49 {Sci.Fi,                                                   
+    Thriller}  => {Action}    0.01129608  0.5757576  3.8582639
+50 {Action,                                                   
+    Sci.Fi}    => {Thriller}  0.01129608  0.3518519  2.3578279
+51 {Action,                                                   
+    Thriller}  => {Sci.Fi}    0.01129608  0.2261905  3.7668553
+52 {Adventure,                                                
+    Thriller}  => {Action}    0.01070155  0.8571429  5.7438816
+53 {Action,                                                   
+    Adventure} => {Thriller}  0.01070155  0.2400000  1.6082869
+54 {Action,                                                   
+    Thriller}  => {Adventure} 0.01070155  0.2142857  2.6698413
